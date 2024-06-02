@@ -1,10 +1,12 @@
 import React from "react";
-import iphone from "../assets/3iphone13.png";
+import iphone from "../../assets/3iphone13.png";
 import { FaApple } from "react-icons/fa";
 
 const Download = () => {
   return (
-    <div className=" mx-auto my-20 rounded w-4/5 bg-black flex justify-center">
+    <div className=" mx-auto my-20 rounded w-4/5 bg-black flex justify-center relative">
+      <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 -top-16 -left-10"></div>
+      <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 -top-24 -left-24"></div>
       <div className="w-2/5 flex flex-col justify-center ">
         <h1 className="text-4xl text-white ">Ready To Get Started?</h1>
         <p className="text-xl font-light text-white py-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import { faq } from "../assets/data.json";
+import { faq } from "../../assets/data.json";
 
 const Faq = () => {
   return (

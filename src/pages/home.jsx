@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import Hero from "../components/hero";
-import Features from "../components/feature";
-import Advantages from "../components/advantage";
-import Testimonial from "../components/testimonial";
-import Faq from "../components/faq";
-import Download from "../components/download";
+import Hero from "../components/home/hero";
+import Features from "../components/home/feature";
+import Advantages from "../components/home/advantage";
+import Testimonial from "../components/home/testimonial";
+import Faq from "../components/home/faq";
+import Download from "../components/home/download";
 
 const Home = () => {
   return (
-    <div>
+    <div className=" overflow-hidden">
       <Hero />
       <Features />
       <Advantages />

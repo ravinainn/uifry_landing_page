@@ -35,3 +35,7 @@
   @apply text-slate-400;
   @apply font-semibold;
 }
+
+.rad-grad {
+  background-image: radial-gradient(closest-side, rgb(255, 85, 85), #fff);
+}
