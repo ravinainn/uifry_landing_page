@@ -1,13 +1,20 @@
 import React from "react";
 import iphone from "../../assets/3iphone13.png";
 import { FaApple } from "react-icons/fa";
+import RedBlur from "../common/redBlur";
+import YellowBlur from "../common/yellowBlur";
+import Star from "../common/star";
+import BlackStar from "../common/blackStar";
 
 const Download = () => {
   return (
     <div className=" mx-auto my-20 rounded w-4/5 bg-black flex justify-center relative">
-      <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 -top-16 -left-10"></div>
-      <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 -top-24 -left-24"></div>
-      <div className="w-2/5 flex flex-col justify-center ">
+      <RedBlur top={"-top-24"} left={"-left-24"} />
+      <YellowBlur top={"-top-16"} left={"-left-10"} />
+      <Star top={"top-1/2"} left={"-left-20"} />
+      <Star top={"top-0"} right={"-right-20"} />
+      <div className="w-2/5 flex flex-col justify-center relative">
+        <BlackStar />
         <h1 className="text-4xl text-white ">Ready To Get Started?</h1>
         <p className="text-xl font-light text-white py-4">
           Risus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus Vulputate.

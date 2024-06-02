@@ -1,6 +1,7 @@
 import React from "react";
 import iphone from "../../assets/iphoneRing.png";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import Star from "../common/star";
 
 const Advantages = () => {
   return (
@@ -27,6 +28,7 @@ const Advantages = () => {
           </div>
         </div>
         <div className="w-2/5 relative">
+          <Star right={"right-0"} />
           <img src={iphone} alt="" />
           <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 top-72 left-40"></div>
           <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 top-80 left-32"></div>
@@ -34,6 +36,7 @@ const Advantages = () => {
       </div>
       <div className="flex justify-center flex-row items-center flex-wrap">
         <div className="w-2/5 relative">
+          <Star right={"right-0"} />
           <img src={iphone} alt="" />
           <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 top-72 left-40"></div>
           <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 top-80 left-32"></div>

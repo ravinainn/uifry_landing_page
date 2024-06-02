@@ -2,18 +2,21 @@ import React from "react";
 import iphone from "../../assets/iphone13profront.png";
 import blackRing from "../../assets/blackRing.svg";
 import { CgPlayButtonO } from "react-icons/cg";
-// import RedBlur from "../common/redBlur";
-// import YellowBlur from "../common/yellowBlur";
+import heroComp from "../../assets/heroComp.svg";
+import RedBlur from "../common/redBlur";
+import YellowBlur from "../common/yellowBlur";
+import Star from "../common/star";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center flex-row items-center flex-wrap h-hfull">
+    <div className="flex justify-center pt-20 flex-row items-center flex-wrap min-h-screen">
       <div className="w-1/2 p-4 mx-auto relative">
-        {/* <RedBlur />
-        <YellowBlur /> */}
-        {/* Blurr */}
-        <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 top-10 left-80"></div>
-        <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 -top-6 left-1/2"></div>
+        <Star top={"-top-24"} left={"-left-12"} />
+        <Star left={"left-36"} bottom={"top-80"} />
+
+        <YellowBlur top={"top-10"} left={"left-80"} />
+        <RedBlur top={"-top-6"} left={"left-1/2"} />
+
         <h1 className="title pb-4 font-thin">
           Make The Best Financial Decisions
         </h1>
@@ -30,23 +33,30 @@ const Hero = () => {
             <span>Watch Video</span>
           </button>
         </div>
+        <div>
+          <img src={heroComp} alt="" />
+        </div>
       </div>
 
-      <div className="relative w-2/5 h-full">
-        <img className="absolute z-30 w-2/3" src={iphone} alt="iphone13" />
+      <div className="relative w-2/5 h-full ">
+        <RedBlur bottom={"bottom-0"} left={"left-14"} />
+        <Star right={"right-20"} />
+        <img className=" z-100 w-2/3" src={iphone} alt="iphone13" />
         <img
-          className=" absolute z-20 left-20 top-16  w-2/3"
+          className=" absolute -z-10 left-20 top-16  w-2/3"
           src={iphone}
           alt="iphone13"
         />
         <img
-          className="absolute z-10 left-40 top-32 w-2/3"
+          className="absolute -z-20 left-40 top-32 w-2/3"
           src={iphone}
           alt="iphone13"
         />
-        <img className="absolute z-0  left-10 w-4/5" src={blackRing} alt="" />
-
-        <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 bottom-10 left-1/3"></div>
+        <img
+          className="absolute -z-30 top-0 left-10 w-4/5"
+          src={blackRing}
+          alt=""
+        />
       </div>
     </div>
   );

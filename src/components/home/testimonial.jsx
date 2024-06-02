@@ -1,22 +1,32 @@
 import React from "react";
 import rings from "../../assets/blackRing.svg";
+import img5 from "../../assets/testimonial_group/img1.svg";
 import img1 from "../../assets/testimonial_group/Group_27.png";
 import img2 from "../../assets/testimonial_group/Group_28.png";
 import img3 from "../../assets/testimonial_group/Group_29.png";
 import img4 from "../../assets/testimonial_group/Group_30.png";
+import Star from "../common/star";
+import YellowBlur from "../common/yellowBlur";
+import RedBlur from "../common/redBlur";
 
 const Testimonial = () => {
   return (
-    <div>
+    <div className="relative">
+      <Star right={"right-44"} top={"-top-20"} />
       <h4 className="text-xl text-center">TESTIMONIAL</h4>
       <h1 className="heading text-center pb-8">
         What Our Users <br /> Say About Us?
       </h1>
       <div className="flex justify-center flex-row items-center flex-wrap">
         <div className="w-2/5 relative">
-          <img className="text-black" src={rings} alt="" />
-          <div className=" w-48 h-44 rounded-full filter blur-2xl bg-yellow-300 mix-blend-multiply absolute -z-10 top-1/3 left-52"></div>
-          <div className=" w-48 h-44 rounded-full filter blur-2xl bg-red-500 mix-blend-multiply absolute -z-10 top-1/3 left-48"></div>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <Star bottom={"bottom-20"} />
+          <img src={img5} alt="" />
+          <img className="absolute -top-12 -left-16 -z-10" src={rings} alt="" />
+          <YellowBlur top={"top-1/3"} left={"left-52"} />
+          <RedBlur top={"top-1/3"} left={"left-48"} />
         </div>
         <div className="w-2/5 flex flex-col gap-6">
           <h2 className="text-2xl  py-4 w-3/6">

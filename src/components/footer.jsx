@@ -69,7 +69,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div class="w-4/5 mx-auto h-0.5 bg-gradient-to-r from-transparent  via-black  to-transparent m-10"></div>
+      <div className="w-4/5 mx-auto h-0.5 bg-gradient-to-r from-transparent  via-black  to-transparent m-10"></div>
 
       <p className="text-md font-light text-center pb-20">
         Copyright 2022 Uifry.Com All Rights Reserved
