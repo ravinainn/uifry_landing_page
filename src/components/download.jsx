@@ -4,7 +4,7 @@ import { FaApple } from "react-icons/fa";
 
 const Download = () => {
   return (
-    <div className=" mx-auto w-4/5 bg-black flex justify-center">
+    <div className=" mx-auto my-20 rounded w-4/5 bg-black flex justify-center">
       <div className="w-2/5 flex flex-col justify-center ">
         <h1 className="text-4xl text-white ">Ready To Get Started?</h1>
         <p className="text-xl font-light text-white py-4">
