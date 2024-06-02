@@ -1,8 +1,10 @@
 import React from "react";
-import Navbar from "../components/Header/navbar";
+import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Features from "../components/feature";
 import Advantages from "../components/advantage";
+import Testimonial from "../components/testimonial";
+import Faq from "../components/faq";
 
 const Home = () => {
   return (
@@ -10,6 +12,8 @@ const Home = () => {
       <Hero />
       <Features />
       <Advantages />
+      <Testimonial />
+      <Faq />
     </div>
   );
 };

@@ -48,5 +48,31 @@
       "price": "$19.99/month",
       "features": ["Feature A", "Feature B", "Feature C", "Feature D"]
     }
+  ],
+  "faq": [
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    },
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    },
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    },
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    },
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    },
+    {
+      "title": "The Best Financial Accounting App Ever!",
+      "description": "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris."
+    }
   ]
 }
