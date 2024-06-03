@@ -15,8 +15,8 @@ function Navbar() {
     <nav className=" w-11/12 mx-auto transition duration-300 ease-in-out">
       <div className="container mx-auto px-4 flex justify-between items-center min-h-20 relative">
         <Link to="/" className="flex items-center space-x-1">
-          <BsFire className="text-2xl text-red-500" />
-          <span className="self-center text-2xl font-bold whitespace-nowrap">
+          <BsFire className="text-2xl sm:text-5xl text-red-500" />
+          <span className="self-center text-4xl sm:text-4xl font-bold whitespace-nowrap">
             uifry
           </span>
         </Link>
