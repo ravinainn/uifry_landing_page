@@ -6,9 +6,6 @@ export default {
       height: {
         hfull: "80vh",
       },
-      animation: {
-        pulseS: "animation: pulse 7s cubic-bezier(0.4, 0, 0.6, 1) infinite;",
-      },
       transitionDelay: {
         2000: "2000ms",
         3000: "3000ms",
