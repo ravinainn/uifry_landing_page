@@ -38,7 +38,7 @@ Uifry is a single-page web application designed and built using modern web techn
 
 - **Design Refernce:** [Figma Link](https://www.figma.com/community/file/1145991068621514311)
 
-- **Libraries:** react-router-dom, react-icons
+- **Libraries:** react-router-dom, react-icons, framer-motion
 
 **Additional Notes**
 
