@@ -10,10 +10,10 @@ import Star from "../common/star";
 import { motion } from "framer-motion";
 
 const Features = () => {
-  const container = (delay) => ({
+  const container = {
     hidden: { x: 200, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 1.25, delay: delay } },
-  });
+    visible: { x: 0, opacity: 1, transition: { duration: 1.25 } },
+  };
   return (
     <div className="flex justify-center flex-row items-center flex-wrap pb-20">
       <div className="hidden sm:block w-2/5 relative">
@@ -27,17 +27,17 @@ const Features = () => {
         <RedBlur top={"top-32"} right={"-right-60"} />
 
         <motion.h4
-          variants={container(0)}
+          variants={container}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           className="redHeading"
         >
           FEATURES
         </motion.h4>
         <motion.h1
-          variants={container(0.5)}
+          variants={container}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           className="heading pb-8"
         >
           Uifry Premium
@@ -47,9 +47,9 @@ const Features = () => {
             return (
               <div key={ind}>
                 <motion.h2
-                  variants={container(ind + 0.7)}
+                  variants={container}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                   className="flex gap-3 subHeading text-center items-center py-4"
                 >
                   <span className=" text-red-500">
@@ -60,9 +60,9 @@ const Features = () => {
                   {f.title}
                 </motion.h2>
                 <motion.p
-                  variants={container(ind + 0.7)}
+                  variants={container}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                   className="p"
                 >
                   {f.description}
