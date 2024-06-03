@@ -7,8 +7,13 @@ import { BiCube } from "react-icons/bi";
 import YellowBlur from "../common/yellowBlur";
 import RedBlur from "../common/redBlur";
 import Star from "../common/star";
+import { motion } from "framer-motion";
 
 const Features = () => {
+  const container = (delay) => ({
+    hidden: { x: 200, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1.25, delay: delay } },
+  });
   return (
     <div className="flex justify-center flex-row items-center flex-wrap pb-20">
       <div className="hidden sm:block w-2/5 relative">
@@ -21,21 +26,47 @@ const Features = () => {
         <YellowBlur top={"top-30"} right={"-right-72"} />
         <RedBlur top={"top-32"} right={"-right-60"} />
 
-        <h4 className="redHeading">FEATURES</h4>
-        <h1 className="heading pb-8">Uifry Premium</h1>
+        <motion.h4
+          variants={container(0)}
+          initial="hidden"
+          animate="visible"
+          className="redHeading"
+        >
+          FEATURES
+        </motion.h4>
+        <motion.h1
+          variants={container(0.5)}
+          initial="hidden"
+          animate="visible"
+          className="heading pb-8"
+        >
+          Uifry Premium
+        </motion.h1>
         {features &&
           features.map((f, ind) => {
             return (
               <div key={ind}>
-                <h2 className="flex gap-3 subHeading text-center items-center py-4">
+                <motion.h2
+                  variants={container(ind + 0.7)}
+                  initial="hidden"
+                  animate="visible"
+                  className="flex gap-3 subHeading text-center items-center py-4"
+                >
                   <span className=" text-red-500">
                     {f.icon === "icon1" && <GiStarShuriken />}
                     {f.icon === "icon2" && <TbHexagon3D />}
                     {f.icon === "icon3" && <BiCube />}
                   </span>{" "}
                   {f.title}
-                </h2>
-                <p className="p">{f.description}</p>
+                </motion.h2>
+                <motion.p
+                  variants={container(ind + 0.7)}
+                  initial="hidden"
+                  animate="visible"
+                  className="p"
+                >
+                  {f.description}
+                </motion.p>
               </div>
             );
           })}

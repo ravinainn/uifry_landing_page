@@ -6,8 +6,13 @@ import heroComp from "../../assets/heroComp.svg";
 import RedBlur from "../common/redBlur";
 import YellowBlur from "../common/yellowBlur";
 import Star from "../common/star";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const container = (delay) => ({
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1, delay: delay } },
+  });
   return (
     <div className="flex justify-center pt-32 flex-row items-center flex-wrap min-h-screen">
       <div className="w-4/5 sm:w-1/2 p-4 mx-auto relative">
@@ -17,11 +22,23 @@ const Hero = () => {
         <YellowBlur top={"top-10"} left={"left-80"} />
         <RedBlur top={"-top-6"} left={"left-1/2"} />
 
-        <h1 className="title pb-4 ">Make The Best Financial Decisions</h1>
-        <p className="pb-4 p">
+        <motion.h1
+          variants={container(0)}
+          initial="hidden"
+          animate="visible"
+          className="title pb-4 "
+        >
+          Make The Best Financial Decisions
+        </motion.h1>
+        <motion.p
+          variants={container(0.2)}
+          initial="hidden"
+          animate="visible"
+          className="pb-4 p"
+        >
           Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet
           Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.
-        </p>
+        </motion.p>
         <div className="flex">
           <button className="button">
             <span>Get Started</span>

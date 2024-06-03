@@ -4,6 +4,17 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import Star from "../common/star";
 
 const Advantages = () => {
+  const conatiner = (delay) => ({
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      optacity: 1,
+      x: 0,
+      transition: { duration: 1.2, delay: delay },
+    },
+  });
   return (
     <div className="pb-20">
       <div className="flex justify-center flex-row items-center flex-wrap">
