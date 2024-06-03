@@ -10,17 +10,17 @@ import Star from "../common/star";
 const Hero = () => {
   return (
     <div className="flex justify-center pt-20 flex-row items-center flex-wrap min-h-screen">
-      <div className="w-1/2 p-4 mx-auto relative">
+      <div className="md:w-1/2 p-4 mx-auto relative">
         <Star top={"-top-24"} left={"-left-12"} />
         <Star left={"left-36"} bottom={"top-80"} />
 
         <YellowBlur top={"top-10"} left={"left-80"} />
         <RedBlur top={"-top-6"} left={"left-1/2"} />
 
-        <h1 className="title pb-4 font-thin">
+        <h1 className="text-2xl font-semibold md:title pb-4 ">
           Make The Best Financial Decisions
         </h1>
-        <p className="pb-4">
+        <p className="pb-4 p">
           Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet
           Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.
         </p>
