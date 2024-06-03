@@ -23,13 +23,28 @@
 }
 
 .title {
-  @apply text-7xl;
+  @apply text-3xl;
+  @apply sm:text-7xl;
   @apply font-bold
 }
 
 .heading {
-  @apply text-5xl;
+  @apply text-2xl;
+  @apply sm:text-5xl;
   @apply font-semibold;
+}
+
+.redHeading {
+  @apply text-sm;
+  @apply sm:text-xl;
+  @apply text-red-500;
+  @apply tracking-widest;
+}
+
+.subHeading {
+  @apply text-xl;
+
+  @apply sm:text-2xl;
 }
 
 .minih {
@@ -38,7 +53,8 @@
 }
 
 .p {
-  @apply text-lg;
+  @apply text-sm;
+  @apply sm:text-lg;
   @apply text-slate-400;
   @apply tracking-wider;
 
@@ -47,4 +63,20 @@
 
 .rad-grad {
   background-image: radial-gradient(closest-side, rgb(255, 85, 85), #fff);
+}
+
+.delay1000 {
+  animation-delay: 1s;
+}
+
+.delay500 {
+  animation-delay: 500ms;
+}
+
+.delay1500 {
+  animation-delay: 1500ms;
+}
+
+.delay1200 {
+  animation-delay: 1200ms;
 }

@@ -10,16 +10,14 @@ import Star from "../common/star";
 const Hero = () => {
   return (
     <div className="flex justify-center pt-20 flex-row items-center flex-wrap min-h-screen">
-      <div className="md:w-1/2 p-4 mx-auto relative">
-        <Star top={"-top-24"} left={"-left-12"} />
-        <Star left={"left-36"} bottom={"top-80"} />
+      <div className="w-4/5 sm:w-1/2 p-4 mx-auto relative">
+        <Star top={"-top-24"} left={"-left-12"} delay={"delay500"} />
+        <Star left={"left-36"} bottom={"top-80"} delay={"delay1500"} />
 
         <YellowBlur top={"top-10"} left={"left-80"} />
         <RedBlur top={"-top-6"} left={"left-1/2"} />
 
-        <h1 className="text-2xl font-semibold md:title pb-4 ">
-          Make The Best Financial Decisions
-        </h1>
+        <h1 className="title pb-4 ">Make The Best Financial Decisions</h1>
         <p className="pb-4 p">
           Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet
           Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.
@@ -38,9 +36,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative w-2/5 h-full ">
+      <div className="hidden sm:block relative w-2/5 h-full ">
         <RedBlur bottom={"bottom-0"} left={"left-14"} />
-        <Star right={"right-20"} />
+        <Star right={"right-20"} delay={"delay1200"} />
         <img className=" z-100 w-2/3" src={iphone} alt="iphone13" />
         <img
           className=" absolute -z-10 left-20 top-16  w-2/3"

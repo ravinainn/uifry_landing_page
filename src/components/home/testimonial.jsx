@@ -11,24 +11,26 @@ import RedBlur from "../common/redBlur";
 
 const Testimonial = () => {
   return (
-    <div className="relative">
-      <Star right={"right-44"} top={"-top-20"} />
-      <h4 className="text-xl text-center">TESTIMONIAL</h4>
+    <div className="relative pb-20">
+      <Star right={"right-44"} top={"-top-20"} delay={"delay1500"} />
+      <h4 className="text-sm tracking-widest sm:text-xl text-center">
+        TESTIMONIAL
+      </h4>
       <h1 className="heading text-center pb-8">
         What Our Users <br /> Say About Us?
       </h1>
       <div className="flex justify-center flex-row items-center flex-wrap">
-        <div className="w-2/5 relative">
+        <div className="hidden sm:block w-2/5 relative">
           <div>
             <img src="" alt="" />
           </div>
-          <Star bottom={"bottom-20"} />
+          <Star bottom={"bottom-20"} delay={"delay500"} />
           <img src={img5} alt="" />
           <img className="absolute -top-12 -left-16 -z-10" src={rings} alt="" />
           <YellowBlur top={"top-1/3"} left={"left-52"} />
           <RedBlur top={"top-1/3"} left={"left-48"} />
         </div>
-        <div className="w-2/5 flex flex-col gap-6">
+        <div className="w-4/5 sm:w-2/5 flex flex-col  gap-6">
           <h2 className="text-2xl  py-4 w-3/6">
             The Best Financial Accounting App Ever!
           </h2>
@@ -45,7 +47,7 @@ const Testimonial = () => {
             <img className="opacity-50 w-8 h-8" src={img3} alt="" />
             <img className="opacity-50 w-8 h-8" src={img4} alt="" />
           </div>
-          <h4>Nick Jonas</h4>
+          <h4 className="text-sm sm:text-lg">Nick Jonas</h4>
         </div>
       </div>
     </div>
