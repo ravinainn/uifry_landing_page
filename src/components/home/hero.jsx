@@ -14,7 +14,7 @@ const Hero = () => {
     visible: { x: 0, opacity: 1, transition: { duration: 1, delay: delay } },
   });
   return (
-    <div className="flex justify-center pt-32 flex-row items-center flex-wrap min-h-screen">
+    <div className="flex justify-center pt-20 sm:pt-32 flex-row items-center flex-wrap min-h-screen">
       <div className="w-4/5 sm:w-1/2 p-4 mx-auto relative">
         <Star top={"-top-24"} left={"-left-12"} delay={"delay500"} />
         <Star left={"left-36"} bottom={"top-80"} delay={"delay1500"} />
