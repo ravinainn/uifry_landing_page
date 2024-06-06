@@ -1,18 +1,4 @@
 {
-  "hero": {
-    "headline": "Make The Best Financial Decisions",
-    "subheadline": "The best app for all your needs.",
-    "ctaButtons": [
-      {
-        "text": "Download Now",
-        "link": "/download"
-      },
-      {
-        "text": "Learn More",
-        "link": "#features"
-      }
-    ]
-  },
   "features": [
     {
       "title": "Budgeting Intervals",
@@ -30,25 +16,7 @@
       "icon": "icon3"
     }
   ],
-  "testimonials": [
-    {
-      "title": "Budgeting Intervals",
-      "description": "Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.",
-      "icon": "icon3"
-    }
-  ],
-  "pricing": [
-    {
-      "plan": "Basic",
-      "price": "$9.99/month",
-      "features": ["Feature A", "Feature B", "Feature C"]
-    },
-    {
-      "plan": "Premium",
-      "price": "$19.99/month",
-      "features": ["Feature A", "Feature B", "Feature C", "Feature D"]
-    }
-  ],
+
   "faq": [
     {
       "title": "The Best Financial Accounting App Ever!",
